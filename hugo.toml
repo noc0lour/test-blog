@@ -2,7 +2,7 @@ baseURL = 'https://noc0lour.github.io/test-blog/'
 languageCode = 'en-us'
 defaultcontentlanguage = 'en'
 title = 'Test Blog - Try Out Themes'
-theme = 'hugo-coder'
+theme = 'tailwind'
 
 paginate = 20
 
