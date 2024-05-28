@@ -4,66 +4,35 @@ defaultcontentlanguage = 'en'
 title = 'Test Blog - Try Out Themes'
 theme = 'tailwind'
 
-paginate = 20
-
-[services]
-
-[markup.highlight]
-style = "github-dark"
+paginate = 10
 
 [params]
-  author = "Andrej"
-  info = "noc0lour"
-  description = "Test Website"
-  keywords = "blog,developer,personal"
-  avatarurl = "images/avatar.jpg"
-  #gravatar = "john.doe@example.com"
-  disableComments = true
+  # dir name of your blog content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
 
-  faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  [params.header]
+    logo = "logo.webp"
 
-  since = 2024
+  [params.footer]
+    since = 2023
+    poweredby = true
 
-  enableTwemoji = true
+[menu]
 
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
+  [[menu.main]]
+    identifier = "post"
+    name = "Post"
+    pageRef = "/posts"
+    weight = 0
 
-  # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 10
 
 [taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
-
-# Social links
-[[params.social]]
-  name = "Github"
-  icon = "fa-brands fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/noc0lour/"
-[[params.social]]
-  name = "Gitlab"
-  icon = "fa-brands fa-gitlab fa-2x"
-  weight = 2
-  url = "https://gitlab.com/noc0lour/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa-brands fa-x-twitter fa-2x"
-  weight = 3
-  url = "https://twitter.com/noc0lour/"
-
-# Menu links
-[[menu.main]]
-  name = "Blog"
-  weight = 1
-  url  = "/posts/"
-[[menu.main]]
-  name = "About"
-  weight = 2
-  url = "/about/"
+category = "categories"
+tag = "tags"
+series = "series"
