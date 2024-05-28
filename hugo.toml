@@ -1,3 +1,4 @@
 baseURL = 'https://test-blog.noc0lour.github.io/'
 languageCode = 'en-us'
 title = 'Test Blog - Try Out Themes'
+theme = 'coder'
